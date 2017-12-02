@@ -1,8 +1,8 @@
 module.exports = {
-  required: ['name', 'recipe'],
+  required: ['name', 'recipe', 'abv'],
   properties: {
     name: {type: 'string'},
     recipe: {type: 'string'},
-    email: {type: 'string', format: 'email'},
+    abv: {type: 'number', minimum: 0, maximum: 100},
   },
 };
